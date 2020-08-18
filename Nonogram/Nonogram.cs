@@ -26,7 +26,7 @@ namespace Nonogram
             bool[] ySolved = new bool[yDimension];
 
             //Loop
-            while (xSolved.Any(x=>!x) || ySolved.Any(x => !x))
+            while (xSolved.Contains(false) || ySolved.Contains(false))
             {
                 //For each column
                 for(int i = 0; i < xDimension; i++)
