@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nonogram", "Nonogram\Nonogram.csproj", "{FF22970D-5FC5-4D97-A87F-618E664EF230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonogramTests", "NonogramTests\NonogramTests.csproj", "{4A76F677-CC23-40EE-9B26-FD9E0F4A78FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF22970D-5FC5-4D97-A87F-618E664EF230} = {FF22970D-5FC5-4D97-A87F-618E664EF230}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF22970D-5FC5-4D97-A87F-618E664EF230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF22970D-5FC5-4D97-A87F-618E664EF230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF22970D-5FC5-4D97-A87F-618E664EF230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF22970D-5FC5-4D97-A87F-618E664EF230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A76F677-CC23-40EE-9B26-FD9E0F4A78FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A76F677-CC23-40EE-9B26-FD9E0F4A78FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A76F677-CC23-40EE-9B26-FD9E0F4A78FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A76F677-CC23-40EE-9B26-FD9E0F4A78FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70DEC3AF-5405-4906-B625-9D9B4FEFB121}
+	EndGlobalSection
+EndGlobal
