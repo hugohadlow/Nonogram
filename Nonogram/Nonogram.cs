@@ -14,8 +14,8 @@ namespace Nonogram
             if (yClues.Length != yDimension) throw new ArgumentException("Wrong number of Y clues");
 
             //Generate possibilities
-            List<byte[]>[] xPossibilities = Possibilities(xClues, yDimension);
-            List<byte[]>[] yPossibilities = Possibilities(yClues, xDimension);
+            List<List<byte[]>> xPossibilities = Possibilities(xClues, yDimension);
+            List < List<byte[]>> yPossibilities = Possibilities(yClues, xDimension);
 
             var output = (byte[,])input.Clone();
             for (int i = 0; i < xDimension; i++)
@@ -83,12 +83,12 @@ namespace Nonogram
         }
 
 
-        public List<byte[]>[] Possibilities(int[][] clues, int dimension)
+        public List<List<byte[]>> Possibilities(int[][] clues, int dimension)
         {
-            var result = new List<byte[]>[clues.Length];
+            var result = new List<List<byte[]>>();
             for (int i = 0; i < clues.Length; i++)
             {
-                result[i] = Possibilities(clues[i], dimension);
+                result.Add(Possibilities(clues[i], dimension));
             }
             return result;
         }
